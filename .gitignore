@@ -47,6 +47,5 @@ Temporary Items
 .apdisk
 
 # Old File
-_site
 .sass-cache
 .jekyll-metadata
