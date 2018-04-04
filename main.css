@@ -1,0 +1,594 @@
+/**
+ * Page content
+ */
+.page {
+  margin-top: 20px; }
+
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: circle; }
+  .post-list > li {
+    margin-bottom: 20px; }
+
+.post-link {
+  display: block;
+  font-size: 24px; }
+
+/**
+* Pages
+*/
+.page-flex {
+  display: flex;
+  justify-content: center; }
+
+.page-right {
+  width: 900px; }
+
+.page-header-pic {
+  max-width: 200px;
+  max-height: 400px;
+  background-size: 400px;
+  background-position: center;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  flex: 1 0 auto;
+  margin-right: 5px; }
+
+.page-header-one {
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: "Abel", sans-serif;
+  text-transform: lowercase;
+  border-top: black solid 5px;
+  font-weight: bold; }
+
+.page-small-header {
+  font-family: "Abel", sans-serif;
+  border-top: black solid 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px; }
+
+.page-content {
+  margin-left: 10px; }
+  .page-content ul, .page-content li {
+    margin-left: 0px; }
+
+/**
+ * Posts
+ */
+.post-quote {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #4e4e4e;
+  padding: 20px;
+  background-color: lightgray; }
+  .post-quote a {
+    font-weight: normal; }
+
+.post-title {
+  display: none;
+  margin-top: 20px;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1; }
+
+.post-body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
+
+.post-photos {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px; }
+  .post-photos .post-image {
+    background-position: center top;
+    background-size: cover;
+    width: 200px;
+    height: 400px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-bottom: 20px; }
+
+.right-sidebar {
+  margin-left: 10px;
+  min-width: 210px; }
+
+.post-width {
+  width: 50%;
+  margin-bottom: 0px; }
+
+.post-content img, .page-content img {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+.post-content video, .page-content video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+.post-content a, .page-content a {
+  text-decoration: underline; }
+.post-content p, .page-content p {
+  margin-top: 10px;
+  font-size: 15px; }
+.post-content h2, .page-content h2 {
+  font-size: 32px;
+  color: white;
+  background: black;
+  font-family: "Abel", sans-serif;
+  padding-left: 5px; }
+.post-content h3, .page-content h3 {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.post-content h4, .page-content h4 {
+  padding-left: 5px;
+  margin-top: 15px;
+  font-size: 22px;
+  color: white;
+  background: black;
+  font-family: "Abel", sans-serif; }
+.post-content h5, .page-content h5 {
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  margin-top: 10px; }
+  .post-content h5:before, .page-content h5:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 2px; }
+.post-content .footnotes, .page-content .footnotes {
+  padding-left: 15px; }
+.post-content blockquote, .page-content blockquote {
+  display: grid;
+  grid-template-columns: 22px auto;
+  background-color: #d7f7ee;
+  border-left: 4px solid #42d9ad;
+  padding: 5px; }
+  .post-content blockquote:before, .page-content blockquote:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1c9";
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-bottom: 5px;
+    font-style: normal;
+    color: #42d9ad;
+    font-size: 25px; }
+  .post-content blockquote p, .page-content blockquote p {
+    margin-top: 0px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    font-style: italic; }
+
+/**
+* Site Header
+*/
+.site-header {
+  z-index: 100;
+  width: 100%;
+  background-color: black; }
+
+#nav-header {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.site-title {
+  font-family: "Abel", sans-serif; }
+  .site-title div {
+    display: inline-block;
+    color: white;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 16px; }
+  .site-title a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
+    .site-title a:visited {
+      color: white; }
+    .site-title a:hover {
+      text-decoration: underline; }
+
+.nav-links {
+  display: flex;
+  padding-left: 15px;
+  justify-content: space-between;
+  align-self: flex-end; }
+  .nav-links a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Abel", sans-serif;
+    font-size: 16px; }
+  .nav-links div {
+    color: white;
+    font-family: "Abel", sans-serif; }
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, pre, hr,
+dl, dd, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styling
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white; }
+
+code {
+  background-color: #f1efef;
+  margin: 1px; }
+
+/**
+ * Links
+ */
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+/**
+* Lists
+*/
+ol {
+  margin-left: 10px; }
+
+ul {
+  margin-left: 10px;
+  margin-top: 10px;
+  -webkit-margin-before: 10px; }
+
+li {
+  margin-bottom: 10px;
+  font-size: 15px; }
+
+/**
+* Tables
+*/
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  background-color: #f1efef; }
+
+table, th, td {
+  padding: 5px; }
+
+th, td {
+  border-left: 2px solid black;
+  padding-left: 10px; }
+  th:first-child, td:first-child {
+    border-left: 0px;
+    padding-left: 5px; }
+
+td {
+  border-top: 2px solid black; }
+
+tbody tr:nth-child(odd) {
+  background-color: #e5e1e1; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  margin: auto; }
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #97ead2; }
+
+/**
+* Site Contact Footer
+*/
+#contact-line {
+  border-top: black solid 5px;
+  margin-top: 20px; }
+
+#contact {
+  background-image: url("assets/images/griffin-asset.png");
+  background-size: 500px;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: right; }
+  #contact .contact-desc {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: "Abel", sans-serif;
+    font-style: italic;
+    max-width: 510px; }
+
+#contactform .formbox {
+  padding: 2px;
+  display: block;
+  min-height: 20px;
+  margin-top: 10px;
+  min-width: 500px; }
+#contactform textarea {
+  padding: 3px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 500px;
+  min-height: 100px;
+  background-color: white; }
+
+/**
+* Site Footer
+*/
+/**
+* Home
+*/
+.home-story {
+  width: 100%;
+  margin-top: 0; }
+  .home-story .home-wrap {
+    width: 75%;
+    margin: auto; }
+  .home-story h1 {
+    font-family: "Abel", sans-serif; }
+  .home-story .intro-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: url("assets/images/ghost-nebula-dragon-2.png");
+    background-position: right;
+    min-height: 400px; }
+  .home-story .home-ribbon {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    align-items: center; }
+    .home-story .home-ribbon .home-title {
+      background-color: black;
+      margin-left: -100px;
+      padding: 5px 30px;
+      margin-bottom: 10px;
+      font-size: 50px;
+      font-family: "Abel", sans-serif;
+      color: white; }
+    .home-story .home-ribbon .home-desc {
+      margin-left: 20px;
+      background-color: white;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 20px;
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      font-style: italic; }
+  .home-story .portfolio-box .link-header {
+    font-size: 25px;
+    font-family: "Abel", sans-serif;
+    color: white; }
+    .home-story .portfolio-box .link-header span {
+      background-color: black; }
+    .home-story .portfolio-box .link-header:visited {
+      color: white; }
+  .home-story .portfolio-box .portfolio {
+    padding-bottom: 20px; }
+    .home-story .portfolio-box .portfolio .example {
+      display: flex;
+      padding-top: 5px; }
+    .home-story .portfolio-box .portfolio .example-pic {
+      width: 200px;
+      height: 400px;
+      border-top-left-radius: 200px;
+      border-bottom-left-radius: 200px;
+      flex: 1 0 auto; }
+    .home-story .portfolio-box .portfolio .example-text {
+      margin-left: 10px;
+      max-height: 400px;
+      display: flex;
+      flex-flow: column; }
+      .home-story .portfolio-box .portfolio .example-text .link-sub {
+        margin-top: 5px; }
+        .home-story .portfolio-box .portfolio .example-text .link-sub span {
+          background-color: #97ead2;
+          font-weight: bold;
+          font-family: "Abel", sans-serif;
+          font-size: 20px; }
+      .home-story .portfolio-box .portfolio .example-text p {
+        overflow: hidden;
+        margin-top: 5px;
+        font-size: 15px; }
+      .home-story .portfolio-box .portfolio .example-text .read-more {
+        margin-top: 5px; }
+        .home-story .portfolio-box .portfolio .example-text .read-more a {
+          font-size: 16px;
+          background-color: black;
+          color: white;
+          font-style: italic;
+          padding-left: 2px;
+          padding-right: 2px; }
+    .home-story .portfolio-box .portfolio #design {
+      margin-top: 20px; }
+    .home-story .portfolio-box .portfolio #writing {
+      margin-top: 40px; }
+    .home-story .portfolio-box .portfolio #tutorial {
+      flex: 1;
+      margin-right: 20px; }
+      .home-story .portfolio-box .portfolio #tutorial .example-pic {
+        background-image: url("assets/images/tutorial/galymzhan-abdugalimov-181-unsplash.jpg");
+        background-position: center;
+        background-size: 600px; }
+    .home-story .portfolio-box .portfolio #visual_ab {
+      flex: 1; }
+      .home-story .portfolio-box .portfolio #visual_ab .example-pic {
+        background-image: url("assets/images/ILN_watercarrier.jpg");
+        background-size: 300px;
+        background-position: left; }
+    .home-story .portfolio-box .portfolio #holiday {
+      margin-right: 20px;
+      flex: 1; }
+      .home-story .portfolio-box .portfolio #holiday .example-pic {
+        background-image: url("assets/images/Holiday_Dinner2.jpg");
+        background-position: right; }
+    .home-story .portfolio-box .portfolio #encounters {
+      flex: 1; }
+      .home-story .portfolio-box .portfolio #encounters .example-pic {
+        background-image: url("assets/images/devils_tower.jpg");
+        background-position: top; }
+  .home-story .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between; }
+  .home-story .section {
+    border-top: black solid 5px; }
+  .home-story #about-box {
+    margin-bottom: 20px; }
+    .home-story #about-box .about-desc {
+      flex-grow: 1;
+      min-height: 200px;
+      min-width: 300px;
+      background-color: #97ead2; }
+    .home-story #about-box #web {
+      margin-left: 5px;
+      margin-right: 5px; }
+  .home-story #blog {
+    margin-bottom: 10px; }
+  .home-story .flex-blog {
+    max-height: 500px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between; }
+  .home-story .blog-ex {
+    max-width: 400px;
+    margin-left: 10px; }
+    .home-story .blog-ex p {
+      max-height: 100px; }
+    .home-story .blog-ex:first-child {
+      margin-left: 0px; }
+    .home-story .blog-ex .blog-img {
+      min-width: 100px;
+      min-height: 100px;
+      background-position: center;
+      background-size: cover; }
+    .home-story .blog-ex .blog-title {
+      font-weight: bold; }
+    .home-story .blog-ex .blog-subtitle {
+      font-style: italic; }
+    .home-story .blog-ex .blog-info {
+      max-height: 400px; }
+      .home-story .blog-ex .blog-info p {
+        overflow: hidden;
+        margin-top: 2px;
+        font-size: 15px; }
+    .home-story .blog-ex .read-more-blog {
+      margin-top: 5px; }
+      .home-story .blog-ex .read-more-blog a {
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        font-style: italic;
+        padding-left: 2px;
+        padding-right: 2px; }
+  .home-story #contact {
+    border-top: black solid 5px;
+    background-image: url("assets/images/griffin-asset.png");
+    background-size: 800px;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-position: right; }
+    .home-story #contact .contact-desc {
+      margin-top: 5px;
+      font-size: 20px;
+      font-family: "Abel", sans-serif;
+      font-style: italic;
+      max-width: 510px; }
+  .home-story #contactform {
+    margin-bottom: 20px; }
+    .home-story #contactform .formbox {
+      padding: 2px;
+      display: block;
+      min-height: 20px;
+      margin-top: 10px;
+      min-width: 500px; }
+    .home-story #contactform textarea {
+      padding: 3px;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      min-width: 500px;
+      min-height: 100px;
+      background-color: white; }
+
+/**
+* Blog Page Styling
+*/
+.blog-width {
+  width: 75%;
+  margin: auto; }
+
+.page-header-two {
+  font-size: 36px;
+  margin-left: 10px;
+  font-family: "Abel", sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  font-weight: bold; }
+
+.flex-blog {
+  display: flex;
+  flex-wrap: wrap; }
+
+.post-blog {
+  flex-basis: 30%;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px; }
+  .post-blog .blog-postimg {
+    min-height: 150px;
+    background-position: center;
+    background-size: 600px; }
+  .post-blog .blog-posttitle {
+    font-weight: bold; }
+  .post-blog .blog-postsubtitle {
+    font-style: italic; }
+  .post-blog .blog-postinfo .p-blog {
+    max-height: 100px;
+    overflow: hidden;
+    margin-top: 2px;
+    font-size: 15px; }
+  .post-blog .read-more-post {
+    margin-top: 5px; }
+    .post-blog .read-more-post a {
+      font-size: 16px;
+      background-color: black;
+      color: white;
+      font-style: italic;
+      padding-left: 2px;
+      padding-right: 2px; }
